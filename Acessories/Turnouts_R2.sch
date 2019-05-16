@@ -23297,28 +23297,6 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="-4.57" y1="-5.1" x2="-3.05" y2="5.1" layer="51"/>
 <rectangle x1="3.05" y1="-5.1" x2="4.5688" y2="5.1" layer="51"/>
 </package>
-<package name="R0603">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.7" x2="1.473" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.7" x2="1.473" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.7" x2="-1.473" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.7" x2="-1.473" y2="0.7" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="0" y="1.25" size="0.8128" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-1.25" size="0.8128" layer="27" align="center">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<wire x1="-0.8" y1="0.7" x2="-1.5" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="0.7" x2="-1.5" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-0.7" x2="-0.8" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.7" x2="1.5" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-0.7" x2="1.5" y2="0.7" width="0.127" layer="21"/>
-<wire x1="1.5" y1="0.7" x2="0.8" y2="0.7" width="0.127" layer="21"/>
-</package>
 <package name="CT3216">
 <description>&lt;b&gt;TANTALUM CAPACITOR&lt;/b&gt;</description>
 <wire x1="-2.973" y1="1.483" x2="2.973" y2="1.483" width="0.0508" layer="39"/>
@@ -28187,8 +28165,8 @@ type 0617, grid 22.5 mm</description>
 <wire x1="-8.255" y1="-2.667" x2="-7.874" y2="-3.048" width="0.1524" layer="21" curve="90"/>
 <wire x1="7.874" y1="3.048" x2="8.255" y2="2.667" width="0.1524" layer="21" curve="-90"/>
 <wire x1="7.874" y1="-3.048" x2="8.255" y2="-2.667" width="0.1524" layer="21" curve="90"/>
-<pad name="1" x="-11.43" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
-<pad name="2" x="11.43" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<pad name="1" x="-11.43" y="0" drill="1.016" shape="octagon"/>
+<pad name="2" x="11.43" y="0" drill="1.016" shape="octagon"/>
 <text x="-8.255" y="3.4544" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-6.477" y="-0.5842" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-10.1854" y1="-0.4064" x2="-8.255" y2="0.4064" layer="21"/>
@@ -28215,6 +28193,28 @@ type 0617, grid 22.5 mm</description>
 <wire x1="0.8" y1="-0.6" x2="1.5" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-0.6" x2="1.5" y2="0.6" width="0.127" layer="21"/>
 <wire x1="1.5" y1="0.6" x2="0.8" y2="0.6" width="0.127" layer="21"/>
+</package>
+<package name="R0603">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.7" x2="1.473" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.7" x2="1.473" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.7" x2="-1.473" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.7" x2="-1.473" y2="0.7" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.935" y="0.735" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.935" y="-1.205" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.8" y1="0.7" x2="-1.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="0.7" x2="-1.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.7" x2="-0.8" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.7" x2="1.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.7" x2="1.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0.7" x2="0.8" y2="0.7" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -33066,6 +33066,802 @@ NPN general-purpose transistor
 </deviceset>
 </devicesets>
 </library>
+<library name="RCLDT">
+<packages>
+<package name="TP-1X1">
+<wire x1="-0.435" y1="0.435" x2="0.435" y2="0.435" width="0.127" layer="21"/>
+<wire x1="0.435" y1="-0.435" x2="-0.435" y2="-0.435" width="0.127" layer="21"/>
+<wire x1="0.435" y1="0.435" x2="0.435" y2="-0.435" width="0.127" layer="21"/>
+<wire x1="-0.435" y1="0.435" x2="-0.435" y2="-0.435" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" cream="no"/>
+<text x="-0.57" y="0.7525" size="0.4064" layer="25">&gt;NAME</text>
+</package>
+<package name="1X01">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.5748" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-1.5RUND">
+<circle x="0" y="0" radius="0.6902" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="0.8725" size="0.8128" layer="25">&gt;NAME</text>
+</package>
+<package name="TP-1.5X1.5">
+<wire x1="-0.7938" y1="0.7938" x2="-0.7938" y2="-0.7938" width="0.127" layer="21"/>
+<wire x1="-0.7938" y1="-0.7938" x2="0.7938" y2="-0.7938" width="0.127" layer="21"/>
+<wire x1="0.7938" y1="-0.7938" x2="0.7938" y2="0.7938" width="0.127" layer="21"/>
+<wire x1="0.7938" y1="0.7938" x2="-0.7938" y2="0.7938" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" cream="no"/>
+<text x="-1.52" y="1.21" size="0.8128" layer="25">&gt;name</text>
+<text x="-2.02" y="2.21" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-1X0.5">
+<wire x1="-0.4763" y1="0.3175" x2="-0.4763" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.4763" y1="-0.3175" x2="0.4763" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.4763" y1="-0.3175" x2="0.4763" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.4763" y1="0.3175" x2="-0.4763" y2="0.3175" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="1" dy="0.5" layer="1" cream="no"/>
+<text x="-1" y="0.5" size="0.8128" layer="25">&gt;NAME</text>
+</package>
+<package name="TP-2.5X2.5">
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="2.5" dy="2.5" layer="1" cream="no"/>
+<text x="-1.77" y="1.46" size="0.8128" layer="25">&gt;name</text>
+<text x="-2.02" y="2.46" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-2RUND">
+<circle x="0" y="0" radius="0.9313" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="1.3525" size="0.8128" layer="25">&gt;NAME</text>
+</package>
+<package name="TP-3X1">
+<wire x1="-1.54" y1="0.5438" x2="-1.54" y2="-0.5438" width="0.127" layer="21"/>
+<wire x1="-1.54" y1="-0.5438" x2="1.54" y2="-0.5438" width="0.127" layer="21"/>
+<wire x1="1.54" y1="-0.5438" x2="1.54" y2="0.5438" width="0.127" layer="21"/>
+<wire x1="1.54" y1="0.5438" x2="-1.54" y2="0.5438" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="3" dy="1" layer="1" cream="no"/>
+<text x="-1.2463" y="-0.3175" size="0.8128" layer="25">&gt;name</text>
+</package>
+<package name="TP-3X1.5">
+<wire x1="-1.54" y1="0.7938" x2="-1.54" y2="-0.7938" width="0.127" layer="21"/>
+<wire x1="-1.54" y1="-0.7938" x2="1.54" y2="-0.7938" width="0.127" layer="21"/>
+<wire x1="1.54" y1="-0.7938" x2="1.54" y2="0.7938" width="0.127" layer="21"/>
+<wire x1="1.54" y1="0.7938" x2="-1.54" y2="0.7938" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="3" dy="1.5" layer="1" cream="no"/>
+<text x="-0.9963" y="-0.3175" size="0.8128" layer="25">&gt;name</text>
+</package>
+<package name="TP-3X2">
+<wire x1="-1.54" y1="1.0438" x2="-1.54" y2="-1.0438" width="0.127" layer="21"/>
+<wire x1="-1.54" y1="-1.0438" x2="1.54" y2="-1.0438" width="0.127" layer="21"/>
+<wire x1="1.54" y1="-1.0438" x2="1.54" y2="1.0438" width="0.127" layer="21"/>
+<wire x1="1.54" y1="1.0438" x2="-1.54" y2="1.0438" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="3" dy="2" layer="1" cream="no"/>
+<text x="-1.7463" y="-0.3175" size="0.8128" layer="25">&gt;name</text>
+</package>
+<package name="TP-3X3">
+<wire x1="-1.5875" y1="-1.5875" x2="-1.5875" y2="1.5875" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="1.5875" x2="1.5875" y2="1.5875" width="0.127" layer="21"/>
+<wire x1="1.5875" y1="1.5875" x2="1.5875" y2="-1.5875" width="0.127" layer="21"/>
+<wire x1="1.5875" y1="-1.5875" x2="-1.5875" y2="-1.5875" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="3" dy="3" layer="1" cream="no"/>
+<text x="-1.1113" y="-0.3175" size="0.8128" layer="25">&gt;name</text>
+</package>
+<package name="TP-3RUND">
+<circle x="0" y="0" radius="1.5" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="3" dy="3" layer="1" roundness="100" cream="no"/>
+<text x="-1.02" y="-0.3975" size="0.8128" layer="25">&gt;NAME</text>
+</package>
+<package name="TP-2X1">
+<wire x1="-0.9525" y1="0.4525" x2="-0.9525" y2="-0.4525" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="-0.4525" x2="0.9525" y2="-0.4525" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-0.4525" x2="0.9525" y2="0.4525" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="0.4525" x2="-0.9525" y2="0.4525" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="2" dy="1" layer="1" cream="no"/>
+<text x="-1.52" y="0.71" size="0.8128" layer="25">&gt;name</text>
+<text x="-1.77" y="1.71" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-2X2">
+<wire x1="-0.9525" y1="0.9525" x2="-0.9525" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="-0.9525" x2="0.9525" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-0.9525" x2="0.9525" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="0.9525" x2="-0.9525" y2="0.9525" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="2" dy="2" layer="1" cream="no"/>
+<text x="-1.52" y="1.21" size="0.8128" layer="25">&gt;name</text>
+<text x="-2.02" y="2.21" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-4X1">
+<wire x1="-1.905" y1="0.635" x2="1.905" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.905" y1="0.635" x2="1.905" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-0.635" x2="-1.905" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0.635" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="4" dy="1" layer="1" cream="no"/>
+<text x="-1.905" y="-0.3175" size="0.8128" layer="25">&gt;name</text>
+<text x="-1.905" y="-0.3175" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-4X1.5">
+<wire x1="-1.9525" y1="0.7025" x2="-1.9525" y2="-0.7025" width="0.127" layer="21"/>
+<wire x1="-1.9525" y1="-0.7025" x2="1.9525" y2="-0.7025" width="0.127" layer="21"/>
+<wire x1="1.9525" y1="-0.7025" x2="1.9525" y2="0.7025" width="0.127" layer="21"/>
+<wire x1="1.9525" y1="0.7025" x2="-1.9525" y2="0.7025" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="4" dy="1.5" layer="1" cream="no"/>
+<text x="-1.52" y="-0.29" size="0.8128" layer="25">&gt;name</text>
+<text x="-2.02" y="1.21" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-4X2">
+<wire x1="-1.9525" y1="0.9525" x2="-1.9525" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-1.9525" y1="-0.9525" x2="1.9525" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="1.9525" y1="-0.9525" x2="1.9525" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="1.9525" y1="0.9525" x2="-1.9525" y2="0.9525" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="4" dy="2" layer="1" cream="no"/>
+<text x="-1.52" y="-0.54" size="0.8128" layer="25">&gt;name</text>
+<text x="-1.52" y="-0.04" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-4X2.5">
+<wire x1="-2" y1="1.25" x2="2" y2="1.25" width="0.127" layer="21"/>
+<wire x1="2" y1="1.25" x2="2" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.25" x2="-2" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.25" x2="-2" y2="1.25" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="4" dy="2.5" layer="1" cream="no"/>
+<text x="-1.54" y="-0.79" size="0.8128" layer="25">&gt;name</text>
+<text x="-1.54" y="0.21" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-5X1.5">
+<wire x1="-2.54" y1="0.7938" x2="-2.54" y2="-0.7938" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.7938" x2="2.54" y2="-0.7938" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.7938" x2="2.54" y2="0.7938" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.7938" x2="-2.54" y2="0.7938" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="5" dy="1.5" layer="1" cream="no"/>
+<text x="-1.7463" y="-0.3175" size="0.8128" layer="25">&gt;name</text>
+</package>
+<package name="TP-5X2">
+<wire x1="-2.5" y1="1" x2="2.5" y2="1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1" x2="2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1" x2="-2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1" x2="-2.5" y2="1" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="5" dy="2" layer="1" cream="no"/>
+<text x="-1.79" y="-0.79" size="0.8128" layer="25">&gt;name</text>
+<text x="-1.79" y="0.21" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-5X3">
+<wire x1="-2.5" y1="1.5" x2="2.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.5" x2="-2.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.5" x2="-2.5" y2="1.5" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="5" dy="3" layer="1" cream="no"/>
+<text x="-1.79" y="-0.79" size="0.8128" layer="25">&gt;name</text>
+<text x="-1.79" y="0.21" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-06X10R">
+<wire x1="-0.3175" y1="0.635" x2="0.3175" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.635" x2="0.635" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0.3175" x2="0.635" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-0.3175" x2="0.3175" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0.3175" x2="-0.635" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.635" x2="-0.635" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-0.3175" x2="-0.3175" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.635" x2="-0.3175" y2="-0.635" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="0.6" diameter="1.016" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-08X13R">
+<wire x1="-0.3175" y1="0.635" x2="0.3175" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.635" x2="0.635" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0.3175" x2="0.635" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-0.3175" x2="0.3175" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0.3175" x2="-0.635" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.635" x2="-0.635" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-0.3175" x2="-0.3175" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.635" x2="-0.3175" y2="-0.635" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="0.8" diameter="1.27" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-10X14R">
+<wire x1="-0.3175" y1="0.635" x2="0.3175" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.635" x2="0.635" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0.3175" x2="0.635" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-0.3175" x2="0.3175" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0.3175" x2="-0.635" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.635" x2="-0.635" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-0.3175" x2="-0.3175" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.635" x2="-0.3175" y2="-0.635" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1" diameter="1.4224" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-10X20R">
+<wire x1="-0.3175" y1="0.9525" x2="0.3175" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.9525" x2="0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="0.3175" x2="0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-0.3175" x2="0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="0.3175" x2="-0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.9525" x2="-0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="-0.3175" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.9525" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-12X17R">
+<wire x1="-0.3175" y1="0.9525" x2="0.3175" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.9525" x2="0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="0.3175" x2="0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-0.3175" x2="0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="0.3175" x2="-0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.9525" x2="-0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="-0.3175" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.9525" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="1.6764" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-12X20R">
+<wire x1="-0.3175" y1="0.9525" x2="0.3175" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.9525" x2="0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="0.3175" x2="0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-0.3175" x2="0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="0.3175" x2="-0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.9525" x2="-0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="-0.3175" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.9525" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="1.9304" shape="octagon"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-15X20R">
+<wire x1="-0.3175" y1="0.9525" x2="0.3175" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.9525" x2="0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="0.3175" x2="0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-0.3175" x2="0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="0.3175" x2="-0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.9525" x2="-0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="-0.3175" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.9525" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.5" diameter="1.9304" shape="octagon"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-15X22R">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.5" diameter="2.1844" shape="octagon"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-15X25R">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.5" diameter="2.54" shape="octagon"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-08X17R">
+<wire x1="-0.3175" y1="0.7938" x2="0.3175" y2="0.7937" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.7937" x2="0.7938" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.7938" y1="0.3175" x2="0.7938" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.7938" y1="-0.3175" x2="0.3174" y2="-0.7938" width="0.127" layer="21"/>
+<wire x1="-0.7937" y1="0.3175" x2="-0.7937" y2="-0.3176" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.7938" x2="-0.7937" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.7937" y1="-0.3176" x2="-0.3175" y2="-0.7939" width="0.127" layer="21"/>
+<wire x1="0.3174" y1="-0.7938" x2="-0.3175" y2="-0.7939" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="0.8" diameter="1.6764" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-1.4RUND">
+<circle x="0" y="0" radius="0.6319" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="1.4" dy="1.4" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="0.8725" size="0.8128" layer="25">&gt;NAME</text>
+</package>
+<package name="TP-35X45R">
+<wire x1="-0.9525" y1="2.2225" x2="0.9525" y2="2.2225" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="2.2225" x2="2.2225" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="2.2225" y1="0.9525" x2="2.2225" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="2.2225" y1="-0.9525" x2="0.9525" y2="-2.2225" width="0.127" layer="21"/>
+<wire x1="-2.2225" y1="0.9525" x2="-2.2225" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="2.2225" x2="-2.2225" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="-2.2225" y1="-0.9525" x2="-0.9525" y2="-2.2225" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-2.2225" x2="-0.9525" y2="-2.2225" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="3.5" diameter="4.5" shape="octagon"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-5X10">
+<wire x1="-4.9" y1="2.5" x2="4.9" y2="2.5" width="0.127" layer="21"/>
+<wire x1="4.9" y1="2.5" x2="4.9" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-2.5" x2="-4.9" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-2.5" x2="-4.9" y2="2.5" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="10" dy="5" layer="1" cream="no"/>
+<text x="-1.79" y="-0.99" size="0.8128" layer="25">&gt;name</text>
+<text x="-1.79" y="0.41" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-17X21R">
+<wire x1="-0.3175" y1="0.9525" x2="0.3175" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.9525" x2="0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="0.3175" x2="0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-0.3175" x2="0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="0.3175" x2="-0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.9525" x2="-0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="-0.3175" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.9525" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.7" diameter="2.1" shape="octagon"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-2.5X2.5_HALBRUND">
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="2.5" dy="2.5" layer="1" roundness="75" cream="no"/>
+<text x="-1.77" y="1.46" size="0.8128" layer="25">&gt;name</text>
+<text x="-2.02" y="2.46" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="0204">
+<wire x1="-1.816" y1="0.6842" x2="1.816" y2="0.6842" width="0.127" layer="21"/>
+<wire x1="1.816" y1="-0.6842" x2="-1.816" y2="-0.6842" width="0.127" layer="21"/>
+<wire x1="1.816" y1="0.6842" x2="1.816" y2="-0.6842" width="0.127" layer="21"/>
+<wire x1="-1.816" y1="0.6842" x2="-1.816" y2="-0.6842" width="0.127" layer="21"/>
+<smd name="2" x="1.651" y="0" dx="1.1938" dy="1.6002" layer="1"/>
+<smd name="1" x="-1.651" y="0" dx="1.1938" dy="1.6002" layer="1"/>
+<text x="-1.524" y="-0.33" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-1.524" y="-0.325" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="TP-2.5X3.5_HALBRUND">
+<wire x1="-1.77" y1="1.27" x2="1.77" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.77" y1="1.27" x2="1.77" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.77" y1="-1.27" x2="-1.77" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.77" y1="-1.27" x2="-1.77" y2="1.27" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="2.5" dy="3.5" layer="1" roundness="75" rot="R90" cream="no"/>
+<text x="-1.77" y="1.46" size="0.8128" layer="25">&gt;name</text>
+<text x="-2.02" y="2.46" size="0.8128" layer="27">&gt;value</text>
+</package>
+<package name="TP-12X30R-ES">
+<smd name="1" x="0" y="0" dx="3" dy="3" layer="1" roundness="100"/>
+<text x="-2.3162" y="1.9288" size="1.27" layer="25">&gt;NAME</text>
+<hole x="0" y="0" drill="1.2"/>
+</package>
+<package name="TP-18X25R">
+<wire x1="-0.3175" y1="0.9525" x2="0.3175" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.9525" x2="0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="0.3175" x2="0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="-0.3175" x2="0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="0.3175" x2="-0.9525" y2="-0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.9525" x2="-0.9525" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="-0.3175" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.9525" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.8" diameter="2.54" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="0.8128" layer="25">&gt;NAME</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="27"/>
+</package>
+<package name="TP-1.2RUND">
+<circle x="0" y="0" radius="0.55" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="1.2" dy="1.2" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="0.7225" size="0.8128" layer="25">&gt;NAME</text>
+</package>
+<package name="TP-0,8X0,8">
+<wire x1="-0.35" y1="0.35" x2="0.35" y2="0.35" width="0.1" layer="21"/>
+<wire x1="0.35" y1="0.35" x2="0.35" y2="-0.35" width="0.1" layer="21"/>
+<wire x1="0.35" y1="-0.35" x2="-0.35" y2="-0.35" width="0.1" layer="21"/>
+<wire x1="-0.35" y1="-0.35" x2="-0.35" y2="0.35" width="0.1" layer="21"/>
+<smd name="1" x="0" y="0" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.97" y="0.5525" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="TP-2X3,5">
+<smd name="1" x="0" y="0" dx="3.5" dy="1.8" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="TP-7X5">
+<smd name="1" x="0" y="0" dx="7" dy="5" layer="1"/>
+</package>
+<package name="TP-7X4">
+<smd name="1" x="0" y="0" dx="7" dy="4" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TP">
+<wire x1="-1.27" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="3.175" size="2.032" layer="95">&gt;NAME</text>
+<rectangle x1="-0.635" y1="0.635" x2="0.635" y2="1.905" layer="94"/>
+<pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TP" prefix="TP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1X1" package="TP-1X1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PIN1MM" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1.5RUND" package="TP-1.5RUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1.5X1.5" package="TP-1.5X1.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X0.5" package="TP-1X0.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2.5X2.5" package="TP-2.5X2.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2-RUND" package="TP-2RUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X1" package="TP-3X1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X1.5" package="TP-3X1.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X2" package="TP-3X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X3" package="TP-3X3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3-RUND" package="TP-3RUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2X1" package="TP-2X1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2X2" package="TP-2X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4X1" package="TP-4X1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4X1.5" package="TP-4X1.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4X2" package="TP-4X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4X2.5" package="TP-4X2.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5X1.5" package="TP-5X1.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5X2" package="TP-5X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5X3" package="TP-5X3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="06X10R" package="TP-06X10R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="08X13R" package="TP-08X13R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="10X14R" package="TP-10X14R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="10X20R" package="TP-10X20R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="12X17R" package="TP-12X17R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="12X20R" package="TP-12X20R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="15X20R" package="TP-15X20R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="15X22R" package="TP-15X22R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="15X25R" package="TP-15X25R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="08X17R" package="TP-08X17R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1.4RUND" package="TP-1.4RUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="35X45R" package="TP-35X45R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-5X10" package="TP-5X10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="17X21R" package="TP-17X21R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2.5X2.5_HALBRUND" package="TP-2.5X2.5_HALBRUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0204" package="0204">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2.5X3.5_HALBRUND" package="TP-2.5X3.5_HALBRUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="12X30R-ES" package="TP-12X30R-ES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="18X25" package="TP-18X25R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1.2-RUND" package="TP-1.2RUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0,8X0,8" package="TP-0,8X0,8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2X3,5_OVAL" package="TP-2X3,5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="7X5" package="TP-7X5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="7X4" package="TP-7X4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -33078,6 +33874,9 @@ NPN general-purpose transistor
 <class number="1" name="pwr" width="0.2" drill="0.3">
 <clearance class="0" value="0.205"/>
 <clearance class="1" value="0.205"/>
+</class>
+<class number="2" name="gnd" width="0.2" drill="0.3">
+<clearance class="2" value="0.2"/>
 </class>
 </classes>
 <parts>
@@ -33378,6 +34177,8 @@ NPN general-purpose transistor
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
+<part name="TP1" library="RCLDT" deviceset="TP" device="1.5RUND"/>
+<part name="GND60" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -34594,10 +35395,10 @@ NPN general-purpose transistor
 <pinref part="C8" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="S1" gate="1" pin="S"/>
-<wire x1="234.95" y1="97.79" x2="237.49" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="237.49" y1="97.79" x2="237.49" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
+<pinref part="S1" gate="1" pin="O"/>
+<wire x1="234.95" y1="102.87" x2="237.49" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="237.49" y1="102.87" x2="237.49" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -34745,9 +35546,9 @@ NPN general-purpose transistor
 <label x="215.9" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="(PCI10/AIN0/INT2)PB2/D6"/>
-<wire x1="200.66" y1="64.77" x2="213.36" y2="64.77" width="0.1524" layer="91"/>
-<label x="207.01" y="64.77" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="(PCI28/XCK1/OC1B)PD4/D30"/>
+<wire x1="200.66" y1="24.13" x2="213.36" y2="24.13" width="0.1524" layer="91"/>
+<label x="208.28" y="24.13" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -34802,9 +35603,9 @@ NPN general-purpose transistor
 <label x="72.39" y="77.47" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="(PCI28/XCK1/OC1B)PD4/D30"/>
-<wire x1="200.66" y1="24.13" x2="213.36" y2="24.13" width="0.1524" layer="91"/>
-<label x="208.28" y="24.13" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="(PCI10/AIN0/INT2)PB2/D6"/>
+<wire x1="200.66" y1="64.77" x2="213.36" y2="64.77" width="0.1524" layer="91"/>
+<label x="207.01" y="64.77" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENT2A" class="0">
@@ -36490,6 +37291,12 @@ NPN general-purpose transistor
 <attribute name="VALUE" x="205.74" y="57.912" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="P+7" gate="1" x="187.96" y="71.12" smashed="yes"/>
+<instance part="TP1" gate="G$1" x="16.51" y="95.25" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.7" y="95.885" size="2.032" layer="95" rot="R180"/>
+</instance>
+<instance part="GND60" gate="1" x="20.32" y="91.44" smashed="yes">
+<attribute name="VALUE" x="17.78" y="88.9" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -36647,6 +37454,12 @@ NPN general-purpose transistor
 <pinref part="GND61" gate="1" pin="GND"/>
 <pinref part="D25" gate="G$1" pin="A"/>
 <wire x1="223.52" y1="34.29" x2="223.52" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="TP1" gate="G$1" pin="1"/>
+<pinref part="GND60" gate="1" pin="GND"/>
+<wire x1="19.05" y1="95.25" x2="20.32" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="95.25" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
