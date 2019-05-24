@@ -10723,7 +10723,7 @@ Source: Comchip CGRM4001-G.pdf</description>
 </package>
 <package name="POLOLUA4988">
 <description>Pololu A4988 Stepper driver module</description>
-<pad name="1" x="-6.35" y="8.89" drill="0.6" diameter="1.6764" shape="square"/>
+<pad name="1" x="-6.35" y="8.89" drill="0.8" diameter="1.6764" shape="square"/>
 <pad name="2" x="-6.35" y="6.35" drill="0.8" diameter="1.6764"/>
 <pad name="3" x="-6.35" y="3.81" drill="0.8" diameter="1.6764"/>
 <pad name="4" x="-6.35" y="1.27" drill="0.8" diameter="1.6764"/>
@@ -17928,7 +17928,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="38.1" y1="162.56" x2="41.91" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BLACK" class="0">
+<net name="1B" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="1B"/>
 <wire x1="151.13" y1="102.87" x2="140.97" y2="102.87" width="0.1524" layer="91"/>
@@ -17936,7 +17936,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <label x="142.24" y="102.87" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="GREEN" class="0">
+<net name="1A" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="1A"/>
 <wire x1="151.13" y1="100.33" x2="140.97" y2="100.33" width="0.1524" layer="91"/>
@@ -17944,7 +17944,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <label x="142.24" y="100.33" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="RED" class="0">
+<net name="2A" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="2A"/>
 <wire x1="151.13" y1="95.25" x2="140.97" y2="95.25" width="0.1524" layer="91"/>
@@ -17952,7 +17952,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <label x="142.24" y="95.25" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="BLUE" class="0">
+<net name="2B" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="2B"/>
 <wire x1="151.13" y1="92.71" x2="140.97" y2="92.71" width="0.1524" layer="91"/>
@@ -18008,48 +18008,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <label x="53.34" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="MS1"/>
-<wire x1="186.69" y1="87.63" x2="208.28" y2="87.63" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="87.63" x2="208.28" y2="92.71" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="9"/>
-<wire x1="208.28" y1="92.71" x2="218.44" y2="92.71" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="186.69" y1="102.87" x2="218.44" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="!SLEEP"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="!RESET"/>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="186.69" y1="97.79" x2="186.69" y2="100.33" width="0.1524" layer="91"/>
-<wire x1="186.69" y1="100.33" x2="218.44" y2="100.33" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="MS3"/>
-<wire x1="186.69" y1="92.71" x2="193.04" y2="92.71" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="5"/>
-<wire x1="193.04" y1="92.71" x2="193.04" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="97.79" x2="218.44" y2="97.79" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="MS2"/>
-<wire x1="186.69" y1="90.17" x2="198.12" y2="90.17" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="7"/>
-<wire x1="198.12" y1="90.17" x2="198.12" y2="95.25" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="95.25" x2="218.44" y2="95.25" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="LEARN" class="0">
 <segment>
 <pinref part="S1" gate="1" pin="P"/>
@@ -18082,6 +18040,79 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="U2" gate="G$1" pin="VMOT"/>
 <wire x1="147.32" y1="110.49" x2="151.13" y2="110.49" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+12V"/>
+</segment>
+</net>
+<net name="MS1" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="D7"/>
+<wire x1="67.31" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
+<label x="53.34" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="MS1"/>
+<wire x1="186.69" y1="87.63" x2="200.66" y2="87.63" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="87.63" x2="200.66" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="9"/>
+<wire x1="200.66" y1="92.71" x2="218.44" y2="92.71" width="0.1524" layer="91"/>
+<label x="201.93" y="92.71" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="MS2" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="D8"/>
+<wire x1="67.31" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<label x="53.34" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="MS2"/>
+<wire x1="186.69" y1="90.17" x2="195.58" y2="90.17" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="7"/>
+<wire x1="195.58" y1="90.17" x2="195.58" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="95.25" x2="218.44" y2="95.25" width="0.1524" layer="91"/>
+<label x="201.93" y="95.25" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="MS3" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="D9"/>
+<wire x1="67.31" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<label x="53.34" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="MS3"/>
+<wire x1="186.69" y1="92.71" x2="193.04" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="5"/>
+<wire x1="193.04" y1="92.71" x2="193.04" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="97.79" x2="218.44" y2="97.79" width="0.1524" layer="91"/>
+<label x="201.93" y="97.79" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="!RESET" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="D10"/>
+<wire x1="67.31" y1="48.26" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
+<label x="53.34" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="!RESET"/>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="186.69" y1="97.79" x2="190.5" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="97.79" x2="190.5" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="100.33" x2="218.44" y2="100.33" width="0.1524" layer="91"/>
+<label x="201.93" y="100.33" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="!SLEEP" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="D11/MOSI"/>
+<wire x1="67.31" y1="45.72" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
+<label x="53.34" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="186.69" y1="102.87" x2="218.44" y2="102.87" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="!SLEEP"/>
+<label x="201.93" y="102.87" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>
