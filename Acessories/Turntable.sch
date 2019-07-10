@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10750,22 +10750,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <text x="0" y="11.43" size="1.27" layer="27" align="center">&gt;Value</text>
 <text x="0" y="-11.43" size="1.27" layer="25" align="center">&gt;Name</text>
 </package>
-<package name="HEADER4">
-<description>4 Way 0.1 inch header</description>
-<pad name="1" x="0" y="0" drill="1" diameter="1.85" shape="square"/>
-<pad name="2" x="0" y="-2.54" drill="1" diameter="1.85"/>
-<pad name="3" x="0" y="-5.08" drill="1" diameter="1.85"/>
-<pad name="4" x="0" y="-7.62" drill="1" diameter="1.85"/>
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-8.89" x2="-1.27" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-8.89" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
-<text x="0" y="3.81" size="1.016" layer="27" align="center">&gt;Value</text>
-<text x="0" y="2.54" size="1.016" layer="21" align="center">&gt;Name</text>
-</package>
 <package name="0805">
 <description>Generic 0805 footprint</description>
 <wire x1="-1.8" y1="1" x2="1.8" y2="1" width="0.0508" layer="39"/>
@@ -10906,12 +10890,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
 </symbol>
-<symbol name="M">
-<description>Single contact in a Header</description>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
 <symbol name="CAPACITOR-EU">
 <description>Generic EU non polarised Capacitor</description>
 <wire x1="0" y1="1.27" x2="0" y2="0.762" width="0.1524" layer="94"/>
@@ -10967,28 +10945,6 @@ Source: Comchip CGRM4001-G.pdf</description>
 <connect gate="G$1" pin="STEP" pad="15"/>
 <connect gate="G$1" pin="VDD" pad="2"/>
 <connect gate="G$1" pin="VMOT" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HEADER4" prefix="J">
-<description>4 way 0.1 inch Header</description>
-<gates>
-<gate name="-1" symbol="M" x="0" y="7.62" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="M" x="0" y="5.08" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="M" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-4" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="HEADER4">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17365,6 +17321,247 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-phoenix-350" urn="urn:adsk.eagle:library:174">
+<description>&lt;b&gt;Phoenix Connectors&lt;/b&gt; Grid 3.50 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1751248" urn="urn:adsk.eagle:footprint:9371/1" library_version="1">
+<description>&lt;b&gt;MKDS 1/ 2-3,5&lt;/b&gt; Printklemme&lt;p&gt;
+Nennstrom: 10 A&lt;br&gt;
+Bemessungsspannung: 160 V&lt;br&gt;
+Raster: 3,5 mm&lt;br&gt;
+Polzahl: 2&lt;br&gt;
+Montageart: Löten&lt;br&gt;
+Anschlussart: Schraubanschluss&lt;br&gt;
+Anschlussrichtung vom Leiter zur Platine: 0°&lt;br&gt;
+Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
+<wire x1="-3.75" y1="3.65" x2="3.75" y2="3.65" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="3.65" x2="-3.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-2.0993" x2="-3.75" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-1.6163" x2="3.75" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-2.0993" x2="3.75" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-1.6163" x2="3.75" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="1.9123" x2="-3.75" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="1.9123" x2="3.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="1.4367" x2="3.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-1.6163" x2="-3.75" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="1.4367" x2="-3.75" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-1.6163" x2="3.75" y2="-1.6163" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="3.65" x2="3.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-1.6163" x2="-3.75" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-2.0993" x2="-3.75" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-2.956" y1="-0.811" x2="-1.039" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="3.75" y1="-2.911" x2="-3.75" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-3.65" x2="3.75" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-3.35" x2="3.75" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-3.35" x2="3.75" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-3.35" x2="-3.75" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-3.75" y1="-2.911" x2="-3.75" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="3.75" y1="-2.911" x2="3.75" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-0.544" y1="0.611" x2="-0.55" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="-0.55" y1="0.605" x2="-2.461" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="0.544" y1="-0.811" x2="2.461" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="2.956" y1="0.611" x2="2.95" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="2.95" y1="0.605" x2="1.039" y2="-1.306" width="0.1016" layer="51"/>
+<circle x="-1.75" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="1.75" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<pad name="1" x="-1.75" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="2" x="1.75" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<text x="-2.2" y="2.2225" size="1.27" layer="21" font="vector">1</text>
+<text x="1.2925" y="2.2225" size="1.27" layer="21" font="vector">2</text>
+<text x="-4.105" y="-2.8575" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-2.0525" y="4.1275" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.1016" layer="21">
+<vertex x="-3.1525" y="-2.8575"/>
+<vertex x="-3.47" y="-2.2225"/>
+<vertex x="-2.835" y="-2.2225"/>
+</polygon>
+</package>
+</packages>
+<packages3d>
+<package3d name="1751248" urn="urn:adsk.eagle:package:9395/1" type="box" library_version="1">
+<description>MKDS 1/ 2-3,5 Printklemme
+Nennstrom: 10 A
+Bemessungsspannung: 160 V
+Raster: 3,5 mm
+Polzahl: 2
+Montageart: Löten
+Anschlussart: Schraubanschluss
+Anschlussrichtung vom Leiter zur Platine: 0°
+Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
+<packageinstances>
+<packageinstance name="1751248"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="SCHRAUBKLEMME" urn="urn:adsk.eagle:symbol:9370/1" library_version="1">
+<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<circle x="11.43" y="0" radius="0.6839" width="0.254" layer="94"/>
+<text x="1.27" y="-0.889" size="1.778" layer="95">&gt;NAME</text>
+<text x="13.97" y="-0.889" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="K" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1751248" urn="urn:adsk.eagle:component:9415/1" prefix="X" library_version="1">
+<description>&lt;b&gt;MKDS 1/ 2-3,5&lt;/b&gt; Printklemme&lt;p&gt;
+Nennstrom: 10 A&lt;br&gt;
+Bemessungsspannung: 160 V&lt;br&gt;
+Raster: 3,5 mm&lt;br&gt;
+Polzahl: 2&lt;br&gt;
+Montageart: Löten&lt;br&gt;
+Anschlussart: Schraubanschluss&lt;br&gt;
+Anschlussrichtung vom Leiter zur Platine: 0°&lt;br&gt;
+Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
+<gates>
+<gate name="-1" symbol="SCHRAUBKLEMME" x="2.54" y="0" addlevel="always"/>
+<gate name="-2" symbol="SCHRAUBKLEMME" x="2.54" y="-7.62" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="1751248">
+<connects>
+<connect gate="-1" pin="K" pad="1"/>
+<connect gate="-2" pin="K" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9395/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="con-phoenix-350">
+<description>&lt;b&gt;Phoenix Connectors&lt;/b&gt; Grid 3.50 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1751264">
+<description>&lt;b&gt;MKDS 1/ 4-3,5&lt;/b&gt; Printklemme&lt;p&gt;
+Nennstrom: 10 A&lt;br&gt;
+Bemessungsspannung: 160 V&lt;br&gt;
+Raster: 3,5 mm&lt;br&gt;
+Polzahl: 4&lt;br&gt;
+Montageart: Löten&lt;br&gt;
+Anschlussart: Schraubanschluss&lt;br&gt;
+Anschlussrichtung vom Leiter zur Platine: 0°&lt;br&gt;
+Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
+<wire x1="-7.25" y1="3.65" x2="7.25" y2="3.65" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="3.65" x2="-7.25" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="7.25" y1="-2.0993" x2="-7.25" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="7.25" y1="-1.6163" x2="7.25" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="7.25" y1="-2.0993" x2="7.25" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="7.25" y1="-1.6163" x2="7.25" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="1.9123" x2="-7.25" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="1.9123" x2="7.25" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="7.25" y1="1.4367" x2="7.25" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="-1.6163" x2="-7.25" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="7.25" y1="1.4367" x2="-7.25" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="-1.6163" x2="7.25" y2="-1.6163" width="0.1016" layer="21"/>
+<wire x1="7.25" y1="3.65" x2="7.25" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="-1.6163" x2="-7.25" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="-2.0993" x2="-7.25" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-6.456" y1="-0.811" x2="-4.539" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="7.25" y1="-2.911" x2="-7.25" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="-3.65" x2="7.25" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="7.25" y1="-3.35" x2="7.25" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="-3.35" x2="7.25" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="-3.35" x2="-7.25" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-7.25" y1="-2.911" x2="-7.25" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="7.25" y1="-2.911" x2="7.25" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-4.044" y1="0.611" x2="-4.05" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="-4.05" y1="0.605" x2="-5.961" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="-2.956" y1="-0.811" x2="-1.039" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="-0.544" y1="0.611" x2="-0.55" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="-0.55" y1="0.605" x2="-2.461" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="0.544" y1="-0.811" x2="2.461" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="2.956" y1="0.611" x2="2.95" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="2.95" y1="0.605" x2="1.039" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="4.044" y1="-0.811" x2="5.961" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="6.456" y1="0.611" x2="6.45" y2="0.605" width="0.1016" layer="21"/>
+<wire x1="6.45" y1="0.605" x2="4.539" y2="-1.306" width="0.1016" layer="51"/>
+<circle x="-5.25" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="-1.75" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="1.75" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="5.25" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<pad name="1" x="-5.25" y="-0.1" drill="1.1" diameter="2.54" rot="R90"/>
+<pad name="2" x="-1.75" y="-0.1" drill="1.1" diameter="2.54" rot="R90"/>
+<pad name="3" x="1.75" y="-0.1" drill="1.1" diameter="2.54" rot="R90"/>
+<pad name="4" x="5.25" y="-0.1" drill="1.1" diameter="2.54" rot="R90"/>
+<text x="-5.7" y="2.2225" size="1.27" layer="21" font="vector">1</text>
+<text x="-2.2075" y="2.2225" size="1.27" layer="21" font="vector">2</text>
+<text x="1.285" y="2.2225" size="1.27" layer="21" font="vector">3</text>
+<text x="4.7775" y="2.2225" size="1.27" layer="21" font="vector">4</text>
+<text x="-7.605" y="-2.8575" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-0.3025" y="4.1275" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.1016" layer="21">
+<vertex x="-6.6525" y="-2.8575"/>
+<vertex x="-6.97" y="-2.2225"/>
+<vertex x="-6.335" y="-2.2225"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHRAUBKLEMME">
+<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
+<circle x="11.43" y="0" radius="0.6839" width="0.254" layer="94"/>
+<text x="1.27" y="-0.889" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="13.97" y="-0.889" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="K" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1751264" prefix="X">
+<description>&lt;b&gt;MKDS 1/ 4-3,5&lt;/b&gt; Printklemme&lt;p&gt;
+Nennstrom: 10 A&lt;br&gt;
+Bemessungsspannung: 160 V&lt;br&gt;
+Raster: 3,5 mm&lt;br&gt;
+Polzahl: 4&lt;br&gt;
+Montageart: Löten&lt;br&gt;
+Anschlussart: Schraubanschluss&lt;br&gt;
+Anschlussrichtung vom Leiter zur Platine: 0°&lt;br&gt;
+Source: http://eshop.phoenixcontact.com .. 1751264.pdf</description>
+<gates>
+<gate name="-1" symbol="SCHRAUBKLEMME" x="0" y="0" addlevel="always"/>
+<gate name="-2" symbol="SCHRAUBKLEMME" x="0" y="-7.62" addlevel="always"/>
+<gate name="-3" symbol="SCHRAUBKLEMME" x="0" y="-15.24" addlevel="always"/>
+<gate name="-4" symbol="SCHRAUBKLEMME" x="0" y="-22.86" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="1751264">
+<connects>
+<connect gate="-1" pin="K" pad="1"/>
+<connect gate="-2" pin="K" pad="2"/>
+<connect gate="-3" pin="K" pad="3"/>
+<connect gate="-4" pin="K" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="1751264" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="10R0934" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17399,7 +17596,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="SMD" package3d_urn="urn:adsk.eagle:package:43404/2"/>
 <part name="M1" library="diy-modules" deviceset="ARDUINO-NANO-3.0" device=""/>
 <part name="U2" library="GJR" deviceset="A4988" device=""/>
-<part name="J1" library="GJR" deviceset="HEADER4" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -17428,6 +17624,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="TV" package3d_urn="urn:adsk.eagle:package:16417/2" technology="12"/>
 <part name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="TV" package3d_urn="urn:adsk.eagle:package:16417/2" technology="05"/>
+<part name="X3" library="con-phoenix-350" deviceset="1751264" device=""/>
+<part name="X2" library="con-phoenix-350" library_urn="urn:adsk.eagle:library:174" deviceset="1751248" device="" package3d_urn="urn:adsk.eagle:package:9395/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -17473,8 +17671,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="X1" gate="-1" x="16.51" y="140.97" smashed="yes" rot="R90">
 <attribute name="NAME" x="17.399" y="144.018" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="X1" gate="-2" x="10.16" y="140.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="11.049" y="144.018" size="1.778" layer="95" rot="R90"/>
+<instance part="X1" gate="-2" x="8.89" y="140.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.779" y="144.018" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="X1" gate="-3" x="35.56" y="162.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="32.512" y="163.449" size="1.778" layer="95" rot="R180"/>
@@ -17527,18 +17725,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="VALUE" x="102.87" y="83.82" size="1.778" layer="96"/>
 </instance>
 <instance part="U2" gate="G$1" x="168.91" y="97.79" smashed="yes"/>
-<instance part="J1" gate="-1" x="138.43" y="102.87" smashed="yes" rot="R180">
-<attribute name="NAME" x="135.89" y="103.632" size="1.524" layer="95" rot="R180"/>
-</instance>
-<instance part="J1" gate="-2" x="138.43" y="100.33" smashed="yes" rot="R180">
-<attribute name="NAME" x="135.89" y="101.092" size="1.524" layer="95" rot="R180"/>
-</instance>
-<instance part="J1" gate="-3" x="138.43" y="92.71" smashed="yes" rot="R180">
-<attribute name="NAME" x="135.89" y="93.472" size="1.524" layer="95" rot="R180"/>
-</instance>
-<instance part="J1" gate="-4" x="138.43" y="95.25" smashed="yes" rot="R180">
-<attribute name="NAME" x="135.89" y="96.012" size="1.524" layer="95" rot="R180"/>
-</instance>
 <instance part="GND9" gate="1" x="166.37" y="72.39" smashed="yes">
 <attribute name="VALUE" x="163.83" y="69.85" size="1.778" layer="96"/>
 </instance>
@@ -17632,6 +17818,30 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="IC2" gate="A1" x="113.03" y="162.56" smashed="yes">
 <attribute name="NAME" x="105.41" y="168.275" size="1.778" layer="95"/>
 <attribute name="VALUE" x="105.41" y="165.735" size="1.778" layer="96"/>
+</instance>
+<instance part="X2" gate="-1" x="21.59" y="140.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.479" y="142.24" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="22.479" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X2" gate="-2" x="12.7" y="140.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.589" y="142.24" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="13.589" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X3" gate="-1" x="138.43" y="95.25" smashed="yes" rot="R180">
+<attribute name="NAME" x="137.16" y="96.139" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="124.46" y="96.139" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X3" gate="-3" x="138.43" y="100.33" smashed="yes" rot="R180">
+<attribute name="NAME" x="137.16" y="101.219" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="124.46" y="101.219" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X3" gate="-4" x="138.43" y="102.87" smashed="yes" rot="R180">
+<attribute name="NAME" x="137.16" y="103.759" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="124.46" y="103.759" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X3" gate="-2" x="138.43" y="92.71" smashed="yes" rot="R180">
+<attribute name="NAME" x="137.16" y="93.599" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="124.46" y="93.599" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -17731,16 +17941,16 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <junction x="214.63" y="43.18"/>
 </segment>
 <segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="40.64" y1="77.47" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="34.29" y1="77.47" x2="40.64" y2="77.47" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="S1" gate="1" pin="O"/>
 <wire x1="129.54" y1="53.34" x2="133.35" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="133.35" y1="53.34" x2="133.35" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="34.29" y1="74.93" x2="40.64" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="74.93" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -17794,10 +18004,10 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <junction x="232.41" y="95.25"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="34.29" y1="74.93" x2="43.18" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="74.93" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="43.18" y1="77.47" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="77.47" x2="43.18" y2="77.47" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -17871,26 +18081,35 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="29.21" y1="107.95" x2="29.21" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="29.21" y1="100.33" x2="24.13" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="24.13" y1="100.33" x2="16.51" y2="100.33" width="0.1524" layer="91"/>
-<wire x1="16.51" y1="100.33" x2="10.16" y2="100.33" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="100.33" x2="10.16" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="100.33" x2="8.89" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="8.89" y1="100.33" x2="8.89" y2="129.54" width="0.1524" layer="91"/>
 <label x="8.89" y="127" size="1.778" layer="95" rot="R90"/>
 <junction x="16.51" y="100.33"/>
 <pinref part="X1" gate="-2" pin="KL"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="10.16" y1="129.54" x2="10.16" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="8.89" y1="129.54" x2="8.89" y2="138.43" width="0.1524" layer="91"/>
 <wire x1="24.13" y1="105.41" x2="24.13" y2="100.33" width="0.1524" layer="91"/>
 <junction x="24.13" y="100.33"/>
-<wire x1="34.29" y1="129.54" x2="10.16" y2="129.54" width="0.1524" layer="91"/>
-<junction x="10.16" y="129.54"/>
+<wire x1="34.29" y1="129.54" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
+<junction x="8.89" y="129.54"/>
 <label x="34.29" y="129.54" size="1.778" layer="95" xref="yes"/>
+<wire x1="12.7" y1="129.54" x2="8.89" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="138.43" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
+<junction x="12.7" y="129.54"/>
+<pinref part="X2" gate="-2" pin="K"/>
 </segment>
 </net>
 <net name="TRACK1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="16.51" y1="128.27" x2="16.51" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="128.27" x2="16.51" y2="134.62" width="0.1524" layer="91"/>
 <label x="16.51" y="129.54" size="1.778" layer="95" rot="R90"/>
 <pinref part="X1" gate="-1" pin="KL"/>
+<wire x1="16.51" y1="134.62" x2="16.51" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="21.59" y1="138.43" x2="21.59" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="21.59" y1="134.62" x2="16.51" y2="134.62" width="0.1524" layer="91"/>
+<junction x="16.51" y="134.62"/>
+<pinref part="X2" gate="-1" pin="K"/>
 </segment>
 </net>
 <net name="N$42" class="0">
@@ -17932,32 +18151,32 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="U2" gate="G$1" pin="1B"/>
 <wire x1="151.13" y1="102.87" x2="140.97" y2="102.87" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-1" pin="S"/>
 <label x="142.24" y="102.87" size="1.27" layer="95"/>
+<pinref part="X3" gate="-4" pin="K"/>
 </segment>
 </net>
 <net name="1A" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="1A"/>
 <wire x1="151.13" y1="100.33" x2="140.97" y2="100.33" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-2" pin="S"/>
 <label x="142.24" y="100.33" size="1.27" layer="95"/>
+<pinref part="X3" gate="-3" pin="K"/>
 </segment>
 </net>
 <net name="2A" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="2A"/>
 <wire x1="151.13" y1="95.25" x2="140.97" y2="95.25" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-4" pin="S"/>
 <label x="142.24" y="95.25" size="1.27" layer="95"/>
+<pinref part="X3" gate="-1" pin="K"/>
 </segment>
 </net>
 <net name="2B" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="2B"/>
 <wire x1="151.13" y1="92.71" x2="140.97" y2="92.71" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-3" pin="S"/>
 <label x="142.24" y="92.71" size="1.27" layer="95"/>
+<pinref part="X3" gate="-2" pin="K"/>
 </segment>
 </net>
 <net name="M-EN" class="0">
