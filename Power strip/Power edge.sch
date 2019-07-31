@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5455,6 +5455,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" value="WHITE"/>
 <part name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" value="Blue"/>
 <part name="LOGO1" library="ohw-logo" deviceset="OSHW_LOGO_6MIL" device="X0200-NT" value="OSHW_LOGO_6MILX0200-NT"/>
+<part name="LED3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="3MM" value="GREEN"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="3K3"/>
 </parts>
 <sheets>
 <sheet>
@@ -5521,6 +5523,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <attribute name="VALUE" x="69.215" y="126.492" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="168.91" y="16.51" smashed="yes"/>
+<instance part="LED3" gate="G$1" x="87.63" y="58.42" smashed="yes">
+<attribute name="NAME" x="91.186" y="53.848" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="83.185" y="53.848" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R2" gate="G$1" x="87.63" y="46.99" smashed="yes" rot="R90">
+<attribute name="NAME" x="86.1314" y="43.18" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="90.932" y="43.18" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5529,16 +5539,27 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="X1" gate="-4" pin="KL"/>
 <pinref part="X2" gate="-4" pin="KL"/>
-<wire x1="40.64" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
 <label x="78.74" y="63.5" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="87.63" y1="41.91" x2="87.63" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="87.63" y1="38.1" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="38.1" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
+<junction x="93.98" y="63.5"/>
 </segment>
 </net>
 <net name="+15V" class="0">
 <segment>
 <pinref part="X1" gate="-3" pin="KL"/>
 <pinref part="X2" gate="-3" pin="KL"/>
-<wire x1="40.64" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
 <label x="78.74" y="68.58" size="1.778" layer="95"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="87.63" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="87.63" y1="60.96" x2="87.63" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="87.63" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<junction x="87.63" y="68.58"/>
 </segment>
 </net>
 <net name="DCC2" class="0">
@@ -5582,6 +5603,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="54.61" y1="116.84" x2="64.77" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="116.84" x2="64.77" y2="119.38" width="0.1524" layer="91"/>
 <junction x="54.61" y="116.84"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="87.63" y1="53.34" x2="87.63" y2="52.07" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

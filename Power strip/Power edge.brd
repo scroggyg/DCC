@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -187,18 +187,18 @@
 </layers>
 <board>
 <plain>
-<wire x1="-25" y1="-20" x2="25" y2="-20" width="0" layer="20"/>
-<wire x1="25" y1="-20" x2="25" y2="20" width="0" layer="20"/>
-<wire x1="25" y1="20" x2="-25" y2="20" width="0" layer="20"/>
-<wire x1="-25" y1="20" x2="-25" y2="-20" width="0" layer="20"/>
+<wire x1="-30" y1="-20" x2="30" y2="-20" width="0" layer="20"/>
+<wire x1="30" y1="-20" x2="30" y2="20" width="0" layer="20"/>
+<wire x1="30" y1="20" x2="-30" y2="20" width="0" layer="20"/>
+<wire x1="-30" y1="20" x2="-30" y2="-20" width="0" layer="20"/>
 <text x="-11.89" y="7.62" size="1.778" layer="21" align="center">DCC1</text>
 <text x="-11.89" y="2.54" size="1.778" layer="21" align="center">DCC2</text>
 <text x="-11.89" y="-2.54" size="1.778" layer="21" align="center">+15V</text>
 <text x="-12.89" y="-7.62" size="1.778" layer="21" align="center">0V</text>
 <text x="0" y="-15" size="1.27" layer="21" align="center">IoT Tech 2019
 DCC Edge Power</text>
-<dimension x1="-25" y1="-20" x2="-25" y2="20" x3="-28" y3="0" textsize="1.27" layer="20"/>
-<dimension x1="-25" y1="-20" x2="25" y2="-20" x3="0" y3="-23" textsize="1.27" layer="20"/>
+<dimension x1="-30" y1="-20" x2="-30" y2="20" x3="-33" y3="0" textsize="1.27" layer="20"/>
+<dimension x1="-30" y1="-20" x2="30" y2="-20" x3="0" y3="-23" textsize="1.27" layer="20"/>
 <text x="12.11" y="7.62" size="1.778" layer="21" align="center">Red</text>
 <text x="12.11" y="2.62" size="1.778" layer="21" align="center">Black</text>
 <text x="12.11" y="-2.54" size="1.778" layer="21" align="center">+15V</text>
@@ -1683,22 +1683,22 @@ Your Eurocircuits Team</description>
 <element name="H2" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="13.97" y="15.24" smashed="yes"/>
 <element name="H3" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="-13.97" y="-15.24" smashed="yes"/>
 <element name="H4" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="13.97" y="-15.24" smashed="yes"/>
-<element name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="LED3MM" value="WHITE" x="-2.54" y="6.35" smashed="yes" rot="R270">
-<attribute name="NAME" x="-2.54" y="11" size="1.016" layer="25" ratio="10" rot="R270" align="center"/>
-<attribute name="VALUE" x="-3.191" y="3.445" size="1.27" layer="27" ratio="10" rot="R270"/>
+<element name="LED1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="LED3MM" value="WHITE" x="-26.5" y="17.5" smashed="yes">
+<attribute name="NAME" x="-26.5" y="14.5" size="1.016" layer="25" ratio="10" align="center"/>
+<attribute name="VALUE" x="-26.5" y="13" size="1.016" layer="27" ratio="10" rot="R180" align="center"/>
 </element>
-<element name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="LED3MM" value="Blue" x="2.54" y="6.35" smashed="yes" rot="R90">
-<attribute name="NAME" x="2.54" y="11" size="1.016" layer="25" ratio="10" rot="R90" align="center"/>
-<attribute name="VALUE" x="3.191" y="0.255" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="LED2" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="LED3MM" value="Blue" x="-21.25" y="17.5" smashed="yes">
+<attribute name="NAME" x="-21.25" y="14.5" size="1.016" layer="25" ratio="10" align="center"/>
+<attribute name="VALUE" x="-21.25" y="13" size="1.016" layer="27" ratio="10" align="center"/>
 </element>
-<element name="R1" library="rcl" package="R0805" value="3K3" x="7.38" y="4.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="7.38" y="3.42" size="0.8128" layer="25" rot="R180" align="center"/>
-<attribute name="VALUE" x="7.38" y="6.42" size="0.6096" layer="27" rot="R180" align="center"/>
+<element name="R1" library="rcl" package="R0805" value="3K3" x="-13.33" y="7.87" smashed="yes" rot="R90">
+<attribute name="NAME" x="-14.83" y="7.87" size="0.8128" layer="25" rot="R90" align="center"/>
+<attribute name="VALUE" x="-11.83" y="7.87" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="X1" library="con-phoenix-508" package="MKDSN1,5/4-5,08" value="MKDSN1,5/4-5,08" x="-20" y="0" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="-25.08" y="-25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="SMKDSN1,5/4-5,08" x="-25.08" y="-25.4" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-20.5111" y="11.125" size="1.27" layer="25"/>
+<attribute name="NAME" x="-17.25" y="11.25" size="1.27" layer="25" align="center"/>
 <attribute name="OC_FARNELL" value="1792905" x="-25.08" y="-25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_NEWARK" value="70R0300" x="-25.08" y="-25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-15.555" y="2.54" size="1.27" layer="27" rot="R270"/>
@@ -1712,59 +1712,86 @@ Your Eurocircuits Team</description>
 <attribute name="VALUE" x="24.445" y="2.54" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="LOGO1" library="ohw-logo" package="OSHW_6X200_NOTEXT" value="OSHW_LOGO_6MILX0200-NT" x="-3" y="14" smashed="yes"/>
+<element name="LED3" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="LED3MM" value="GREEN" x="-26.5" y="-17.5" smashed="yes">
+<attribute name="NAME" x="-26.5" y="-14.25" size="1.016" layer="25" ratio="10" align="center"/>
+<attribute name="VALUE" x="-26.5" y="-12.75" size="1.016" layer="27" ratio="10" align="center"/>
+</element>
+<element name="R2" library="rcl" package="R0805" value="3K3" x="-21.75" y="-17.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="-21.75" y="-19" size="0.6096" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="-21.75" y="-16" size="0.6096" layer="27" rot="R180" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="0V">
 <contactref element="X1" pad="4"/>
 <contactref element="X2" pad="4"/>
 <polygon width="0.2032" layer="1">
-<vertex x="-25" y="20"/>
-<vertex x="25" y="20"/>
-<vertex x="25" y="-20"/>
-<vertex x="-25" y="-20"/>
+<vertex x="-30" y="20"/>
+<vertex x="30" y="20"/>
+<vertex x="30" y="-20"/>
+<vertex x="-30" y="-20"/>
 </polygon>
+<contactref element="R2" pad="1"/>
 </signal>
 <signal name="+15V">
 <contactref element="X1" pad="3"/>
 <contactref element="X2" pad="3"/>
 <wire x1="-19.975" y1="-2.5189" x2="20.025" y2="-2.5189" width="2.54" layer="16"/>
+<contactref element="LED3" pad="A"/>
+<wire x1="-19.975" y1="-2.5189" x2="-23.5189" y2="-2.5189" width="0.4064" layer="16"/>
+<wire x1="-27.77" y1="-6.77" x2="-27.77" y2="-17.5" width="0.4064" layer="16"/>
+<wire x1="-23.5189" y1="-2.5189" x2="-27.77" y2="-6.77" width="0.4064" layer="16"/>
 </signal>
 <signal name="DCC2">
 <contactref element="X1" pad="2"/>
 <contactref element="X2" pad="2"/>
 <contactref element="R1" pad="1"/>
-<wire x1="-19.975" y1="2.5611" x2="8.89" y2="2.5611" width="2.54" layer="16"/>
-<wire x1="8.89" y1="2.5611" x2="20.025" y2="2.5611" width="2.54" layer="16"/>
-<wire x1="8.33" y1="4.92" x2="8.89" y2="4.36" width="0.6096" layer="1"/>
-<wire x1="8.89" y1="4.36" x2="8.89" y2="2.5611" width="0.6096" layer="1"/>
-<via x="8.89" y="2.5611" extent="1-16" drill="0.55"/>
+<wire x1="-19.975" y1="2.5611" x2="-13.36" y2="2.5611" width="2.54" layer="16"/>
+<wire x1="-13.36" y1="2.5611" x2="20.025" y2="2.5611" width="2.54" layer="16"/>
+<wire x1="-13.33" y1="6.92" x2="-13.36" y2="6.89" width="0.6096" layer="1"/>
+<wire x1="-13.36" y1="6.89" x2="-13.36" y2="2.5611" width="0.6096" layer="1"/>
+<via x="-13.36" y="2.5611" extent="1-16" drill="0.55"/>
 </signal>
 <signal name="DCC1">
 <contactref element="X1" pad="1"/>
 <contactref element="X2" pad="1"/>
 <contactref element="LED1" pad="A"/>
 <contactref element="LED2" pad="K"/>
-<wire x1="-19.975" y1="7.6411" x2="-2.5611" y2="7.6411" width="2.54" layer="16"/>
-<wire x1="-2.5611" y1="7.6411" x2="-2.54" y2="7.62" width="2.54" layer="16"/>
-<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="2.54" layer="16"/>
-<wire x1="2.54" y1="7.62" x2="20.3239" y2="7.62" width="2.54" layer="16"/>
 <wire x1="20.3239" y1="7.62" x2="20.025" y2="7.6411" width="2.54" layer="16"/>
+<wire x1="20.3028" y1="7.6411" x2="20.3239" y2="7.62" width="2.54" layer="16"/>
+<wire x1="-19.975" y1="7.6411" x2="20.3028" y2="7.6411" width="2.54" layer="16"/>
+<wire x1="-19.98" y1="17.5" x2="-21.504" y2="19" width="0.4064" layer="16"/>
+<wire x1="-21.504" y1="19" x2="-26.25" y2="19" width="0.4064" layer="16"/>
+<wire x1="-26.25" y1="19" x2="-27.75" y2="17.5" width="0.4064" layer="16"/>
+<wire x1="-27.75" y1="17.5" x2="-27.77" y2="17.5" width="0.4064" layer="16"/>
+<wire x1="-27.77" y1="17.5" x2="-27.610553125" y2="17.276653125" width="0.4064" layer="16"/>
+<wire x1="-19.975" y1="9.6411" x2="-19.975" y2="7.6411" width="0.4064" layer="16"/>
+<wire x1="-19.975" y1="9.6411" x2="-27.610553125" y2="17.276653125" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$32">
 <contactref element="R1" pad="2"/>
 <contactref element="LED1" pad="K"/>
 <contactref element="LED2" pad="A"/>
-<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="16"/>
-<wire x1="2.54" y1="5.08" x2="6.27" y2="5.08" width="0.6096" layer="1"/>
-<wire x1="6.27" y1="5.08" x2="6.43" y2="4.92" width="0.6096" layer="1"/>
+<wire x1="-13.717453125" y1="9.207453125" x2="-13.33" y2="8.82" width="0.6096" layer="1"/>
+<wire x1="-22.52" y1="17.5" x2="-25.23" y2="17.5" width="0.4064" layer="16"/>
+<wire x1="-25.23" y1="17.5" x2="-25.096234375" y2="17.346234375" width="0.4064" layer="1"/>
+<wire x1="-18.25" y1="10.5" x2="-15" y2="10.5" width="0.4064" layer="1"/>
+<wire x1="-15" y1="10.5" x2="-13.717453125" y2="9.217453125" width="0.4064" layer="1"/>
+<wire x1="-13.717453125" y1="9.217453125" x2="-13.717453125" y2="9.207453125" width="0.4064" layer="1"/>
+<wire x1="-25.096234375" y1="17.346234375" x2="-18.25" y2="10.5" width="0.4064" layer="1"/>
 </signal>
 <signal name="GND">
 <polygon width="0.2032" layer="16">
-<vertex x="-25" y="20"/>
-<vertex x="25" y="20"/>
-<vertex x="25" y="-20"/>
-<vertex x="-25" y="-20"/>
+<vertex x="-30" y="20"/>
+<vertex x="30" y="20"/>
+<vertex x="30" y="-20"/>
+<vertex x="-30" y="-20"/>
 </polygon>
+</signal>
+<signal name="N$1">
+<contactref element="LED3" pad="K"/>
+<contactref element="R2" pad="2"/>
+<wire x1="-25.23" y1="-17.5" x2="-22.7" y2="-17.5" width="0.4064" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
